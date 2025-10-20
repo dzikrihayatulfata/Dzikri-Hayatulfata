@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- GPA Sidebar -->
+    <div class="fixed left-0 top-1/2 transform -translate-y-1/2 bg-white shadow-md rounded-r-lg p-4 z-20 hidden md:block">
+        <h3 class="text-lg font-semibold text-gray-800">GPA</h3>
+        <p class="text-2xl font-bold text-blue-500">3.71</p>
+        <p class="text-sm text-gray-600">out of 4.0</p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">My Portfolio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="text-gray-600 hover:text-blue-500">Home</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-blue-500">About</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-blue-500">Projects</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-blue-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">Welcome to My Portfolio</h2>
+            <p class="text-lg md:text-xl mb-6">I'm a passionate developer creating amazing web experiences.</p>
+            <a href="#projects" class="bg-white text-blue-500 px-6 py-3 rounded-full font-semibold hover:bg-blue-100">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-6 md:mb-0">
+                    <img src="./image/3.png" alt="Profile" class="rounded-full mx-auto" style="max-width: 200px; height: auto;">
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <p class="text-gray-600 leading-relaxed">
+                        Halo, saya Dzikri Hayatulfata, mahasiswa Sistem Informasi dengan pengalaman mengembangkan proyek berbasis web dan data, seperti Sistem Booking Hotel (Java Spring Boot), Analisis Cuaca (Python), Pemilihan Destinasi Wisata (Flask, SAW, WP, AHP), Deep Learning CIFAR-10 (TensorFlow), dan Aplikasi Chat Realtime (Java, Apache Kafka). Mahir dalam HTML, CSS, MySQL, Java, Python, C++, PL/SQL, dan SQL. Saya cepat belajar, komunikatif, dan siap berkontribusi melalui magang di bidang pengembangan sistem teknologi informasi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-center mb-8">
+                <img id="project-image" src="./image/2.jpg" alt="Expert Projects" class="w-32 h-32 mr-4 rounded-md">
+                <h2 class="text-3xl font-bold text-gray-800">My Projects</h2>
+            </div>
+
+            <!-- Tabs -->
+            <div class="flex justify-center mb-8">
+                <button id="basic-tab" class="px-6 py-3 mx-3 text-lg bg-gray-300 text-gray-800 rounded-xl font-semibold hover:bg-gray-400 active:scale-105 transition">
+                    Basic Projects
+                </button>
+                <button id="expert-tab" class="px-6 py-3 mx-3 text-lg bg-blue-500 text-white rounded-xl font-semibold hover:bg-blue-600 active:scale-105 transition">
+                    Intermediate Projects
+                </button>
+            </div>
+
+            <!-- Basic Projects -->
+            <div id="basic-projects" class="grid grid-cols-1 md:grid-cols-3 gap-6 hidden">
+                <a href="https://github.com/dzikrihayatulfata/Analisis-Data-Cuaca-Daerah-Barito-Selatan-Menggunakan-Python-dan-Jupyter-Notebook" target="_blank" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition transform hover:scale-105 block">
+                    <h3 class="text-xl font-semibold mb-2">Analisis Cuaca</h3>
+                    <p class="text-gray-600">Analisis Cuaca Menggunakan Python dan Jupyter Notebook</p>
+                </a>
+                <a href="https://github.com/dzikrihayatulfata/Sistem-Pemesanan-Hotel-Berbasis-Website-Java-Spring-Boot-dan-Maven" target="_blank" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition transform hover:scale-105 block">
+                    <h3 class="text-xl font-semibold mb-2">Booking Hotel Pesona Papua</h3>
+                    <p class="text-gray-600">Booking Hotel Java Spring Boot</p>
+                </a>
+                <a href="https://github.com/dzikrihayatulfata/DecisionSupportSystem-Destinasi-Wisata-Python" target="_blank" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition transform hover:scale-105 block">
+                    <h3 class="text-xl font-semibold mb-2">Pemilihan Destinasi Wisata</h3>
+                    <p class="text-gray-600">Decision Support System Destinasi Wisata Python</p>
+                </a>
+            </div>
+
+            <!-- Expert Projects -->
+            <div id="expert-projects" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="https://github.com/dzikrihayatulfata/ChatApp" target="_blank" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition transform hover:scale-105 block">
+                    <h3 class="text-xl font-semibold mb-2">ChatApp</h3>
+                    <p class="text-gray-600">ChatApp data realtime</p>
+                </a>
+                <a href="https://github.com/dzikrihayatulfata/Deep-Learning-CIFAR-10" target="_blank" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition transform hover:scale-105 block">
+                    <h3 class="text-xl font-semibold mb-2">Prediksi Gambar CIFAR-10</h3>
+                    <p class="text-gray-600">Deep Learning CIFAR 10</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Contact</h2>
+            <div class="max-w-lg mx-auto">
+                <p class="text-gray-600 text-center mb-6">Connect with me through my professional profiles or explore my skills below!</p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="https://www.linkedin.com/in/dzikri-h-62988a210/" target="_blank" class="text-blue-500 hover:text-blue-700 font-semibold flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/dzikrihayatulfata" target="_blank" class="text-blue-500 hover:text-blue-700 font-semibold flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.756-1.333-1.756-1.087-.744.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.906-.015 3.296 0 .319.21.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        GitHub
+                    </a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">My Skills</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <button class="skill-btn px-3 py-1 bg-blue-500 text-white rounded-lg hover:bg-blue-600" data-skill="python">Python</button>
+                        <button class="skill-btn px-3 py-1 bg-blue-500 text-white rounded-lg hover:bg-blue-600" data-skill="java">Java</button>
+                        <button class="skill-btn px-3 py-1 bg-blue-500 text-white rounded-lg hover:bg-blue-600" data-skill="sql">sql</button>
+                        <button class="skill-btn px-3 py-1 bg-blue-500 text-white rounded-lg hover:bg-blue-600" data-skill="kafka">kafka</button>
+                        <button class="skill-btn px-3 py-1 bg-blue-500 text-white rounded-lg hover:bg-blue-600" data-skill="htmlcss">HTML & CSS</button>
+                    </div>
+                    <div id="skill-description" class="text-gray-600">
+                        <p>Click a skill above to see more details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Dzikri Hayatulfata. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Tab switching logic for projects
+        const basicTab = document.getElementById('basic-tab');
+        const expertTab = document.getElementById('expert-tab');
+        const basicProjects = document.getElementById('basic-projects');
+        const expertProjects = document.getElementById('expert-projects');
+        const projectImage = document.getElementById('project-image');
+
+        // Set "Expert Projects" as default active tab on page load
+        window.addEventListener('load', () => {
+            expertTab.classList.add('bg-blue-500', 'text-white');
+            expertTab.classList.remove('bg-gray-300', 'text-gray-800');
+            basicTab.classList.add('bg-gray-300', 'text-gray-800');
+            basicTab.classList.remove('bg-blue-500', 'text-white');
+            expertProjects.classList.remove('hidden');
+            basicProjects.classList.add('hidden');
+            projectImage.src = './image/2.jpg';
+            projectImage.alt = 'Expert Projects';
+            projectImage.classList.add('w-32', 'h-32');
+            projectImage.classList.remove('w-24', 'h-24');
+        });
+
+        basicTab.addEventListener('click', () => {
+            basicTab.classList.add('bg-blue-500', 'text-white');
+            basicTab.classList.remove('bg-gray-300', 'text-gray-800');
+            expertTab.classList.add('bg-gray-300', 'text-gray-800');
+            expertTab.classList.remove('bg-blue-500', 'text-white');
+            basicProjects.classList.remove('hidden');
+            expertProjects.classList.add('hidden');
+            projectImage.src = './image/1.jpg';
+            projectImage.alt = 'Basic Projects';
+            projectImage.classList.add('w-32', 'h-32');
+            projectImage.classList.remove('w-24', 'h-24');
+        });
+
+        expertTab.addEventListener('click', () => {
+            expertTab.classList.add('bg-blue-500', 'text-white');
+            expertTab.classList.remove('bg-gray-300', 'text-gray-800');
+            basicTab.classList.add('bg-gray-300', 'text-gray-800');
+            basicTab.classList.remove('bg-blue-500', 'text-white');
+            expertProjects.classList.remove('hidden');
+            basicProjects.classList.add('hidden');
+            projectImage.src = './image/2.jpg';
+            projectImage.alt = 'Expert Projects';
+            projectImage.classList.add('w-32', 'h-32');
+            projectImage.classList.remove('w-24', 'h-24');
+        });
+
+        // Skill description toggle
+        const skillButtons = document.querySelectorAll('.skill-btn');
+        const skillDescription = document.getElementById('skill-description');
+
+        const skillDetails = {
+            java: 'Mahir dalam mengembangkan aplikasi berbasis web seperti Sistem Booking Hotel menggunakan Java Spring Boot dan Chat Data Realtime dengan Java dan Apache Kafka.',
+            python: 'Berpengalaman membangun aplikasi seperti Pemilihan Destinasi Wisata dengan Flask (metode SAW, WP, AHP, AHP+SAW, AHP+WP) serta analisis data cuaca dan prediksi gambar menggunakan TensorFlow untuk Deep Learning CIFAR-10.',
+            sql: 'Terampil dalam penerapan ETL dan Data Warehouse untuk Sistem Pelanggan dan Pemesanan Restoran menggunakan SQL Server Management Studio.',
+            htmlcss: 'Memiliki dasar kuat dalam membangun halaman web terstruktur dan bergaya dengan HTML dan CSS, fokus pada desain responsif.',
+            kafka: 'Ahli dalam mengelola sistem data streaming seperti Chat Data Realtime menggunakan Apache Kafka untuk komunikasi cepat dan skalabel.'
+        };
+
+        skillButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const skill = button.getAttribute('data-skill');
+                skillDescription.innerHTML = `<p>${skillDetails[skill]}</p>`;
+                
+                // Update active button styling
+                skillButtons.forEach(btn => {
+                    btn.classList.remove('bg-blue-600');
+                    btn.classList.add('bg-blue-500');
+                });
+                button.classList.remove('bg-blue-500');
+                button.classList.add('bg-blue-600');
+            });
+        });
+    </script>
+</body>
+</html>
